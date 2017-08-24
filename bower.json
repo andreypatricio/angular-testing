@@ -1,0 +1,19 @@
+{
+	"name": "jasmine",
+	"version": "0.0.1",
+	"authors": [
+		"Andrey M. Patrício - andreypatricio@gmail.com"
+	],
+	"license": "MIT",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"devDependencies": {
+		"angular": "*",
+		"angular-mocks": "*"
+	}
+}

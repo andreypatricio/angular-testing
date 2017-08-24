@@ -1,0 +1,17 @@
+{
+  "name": "jasmine",
+  "version": "0.0.1",
+  "description": "Jasmine Testing App",
+  "author": "Andrey M. Patr�cio '<andrey.patricio@gmail.com>",
+  "devDependencies": {
+    "angular": "*",
+    "angular-mocks": "*",
+    "gulp": "*",
+    "gulp-concat": "*",
+    "gulp-uglify": "*",
+    "jasmine": "*",
+    "karma": "*",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "*"
+  }
+}

@@ -1,0 +1,1 @@
+describe("app.controller",function(){beforeEach(module("app")),it("valida a igualdade entre a string informada e a retornada pela função",function(){expect("OI").toBe("OI")})});
