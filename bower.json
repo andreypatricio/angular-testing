@@ -2,7 +2,7 @@
 	"name": "jasmine",
 	"version": "0.0.1",
 	"authors": [
-		"Andrey M. Patrício - andreypatricio@gmail.com"
+		"Andrey M. Patrï¿½cio - andreypatricio@gmail.com"
 	],
 	"license": "MIT",
 	"ignore": [
@@ -13,7 +13,7 @@
 		"tests"
 	],
 	"devDependencies": {
-		"angular": "*",
-		"angular-mocks": "*"
+		"angular": "^1.6.5",
+		"angular-mocks": "^1.6.6"
 	}
 }

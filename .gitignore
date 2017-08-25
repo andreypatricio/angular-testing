@@ -1,3 +1,6 @@
 /.settings/
 /bower_components/
 /node_modules/
+/.project
+/Chrome_60.0.3112_(Windows_7_0.0.0)/
+/PhantomJS_2.1.1_(Windows_7_0.0.0)/
