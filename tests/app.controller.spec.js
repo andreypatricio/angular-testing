@@ -1,32 +1,39 @@
-describe('Eu como desenvolvedor, desejo testar as funcionalidades da classe app.controller.js', function(){
+describe('Eu como desenvolvedor, desejo testar as funcionalidades do controller da aplicação (app.controller.js).', function(){
 	
-	var $controller, vm;
+	var $controller,
+		scope,
+		vm;
 
 	beforeEach(module('app'));
 	
-	beforeEach(inject(function (_$controller_){
+	beforeEach(inject(function (_$controller_, _$rootScope_){
+		scope = _$rootScope_.$new();
 		$controller = _$controller_;
-		vm = $controller('AppController');
+		
+		vm = $controller('AppController', {
+			$scope : scope,
+		});
 	}));
 	
-	describe('E ao validar as funcionalidades da function devolver...', function(){
-
-		it('a function deve retornar o mesmo string informado.', function() {
-			expect(vm.devolver("Hello World!")).toBe("Hello World!");
+	describe('Ao validar as funcionalidades do controller', function(){
+		
+		it('o controller deve estar devidamente estanciado.', function() {
+			expect(scope).toBeDefined();
+			expect(scope.simpleValue).toBe('jasmine')
 		});
 		
-		it('a function deve retornar o mesmo integer informado.', function() {
-			expect(vm.devolver(1)).toBe(1);
+		it('o $scope do meu controller está acessível.', function() {
+			expect(vm).toBeDefined();
+		});
+
+		it('a function returnValue deve retornar o mesmo string informado.', function() {
+			expect(vm.returnValue("Hello World!")).toBe("Hello World!");
+		});
+		
+		it('a function returnValue deve retornar o mesmo integer informado.', function() {
+			expect(vm.returnValue(1)).toBe(1);
 		});
 		
 	});
-	
-
-	
-	
-});
-
-describe('Eu como desenvolvedor, desejo testar as funcionalidades da classe app.controller.js', function(){
-	
 	
 });
