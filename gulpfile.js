@@ -1,5 +1,5 @@
 var js  = [
-    './tests/*'
+    './src/*'
 ];
  
 var gulp = require('gulp');

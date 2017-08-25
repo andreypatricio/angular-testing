@@ -7,7 +7,7 @@ AppController.$inject = [];
 function AppController() {
 	var vm = this;
 
-	vm.imprime = function(string) {
-		return string;
+	vm.devolver = function(valor) {
+		return valor;
 	};
 }

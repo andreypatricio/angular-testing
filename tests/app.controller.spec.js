@@ -1,4 +1,4 @@
-describe('app controller', function(){
+describe('Eu como desenvolvedor, desejo testar as funcionalidades da classe app.controller.js', function(){
 	
 	var $controller, vm;
 
@@ -9,9 +9,24 @@ describe('app controller', function(){
 		vm = $controller('AppController');
 	}));
 	
-	it('valida a igualdade entre a string informada e a retornada pela função', function() {
-		expect('OI').toBe('OI');
+	describe('E ao validar as funcionalidades da function devolver...', function(){
+
+		it('a function deve retornar o mesmo string informado.', function() {
+			expect(vm.devolver("Hello World!")).toBe("Hello World!");
+		});
+		
+		it('a function deve retornar o mesmo integer informado.', function() {
+			expect(vm.devolver(1)).toBe(1);
+		});
+		
 	});
+	
+
+	
+	
+});
+
+describe('Eu como desenvolvedor, desejo testar as funcionalidades da classe app.controller.js', function(){
 	
 	
 });
