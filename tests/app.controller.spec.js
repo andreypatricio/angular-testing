@@ -17,7 +17,7 @@ describe('Eu como desenvolvedor, desejo testar as funcionalidades do controller 
 	
 	describe('Ao validar as funcionalidades do controller', function(){
 		
-		it('o controller deve estar devidamente estanciado.', function() {
+		it('o controller deve estar devidamente instanciado.', function() {
 			expect(scope).toBeDefined();
 			expect(scope.simpleValue).toBe('jasmine')
 		});
@@ -27,7 +27,7 @@ describe('Eu como desenvolvedor, desejo testar as funcionalidades do controller 
 		});
 
 		it('a function returnValue deve retornar o mesmo string informado.', function() {
-			expect(vm.returnValue("Hello World!")).toBe("Hello World!");
+			expect(vm.returnValue("Hello controller!")).toBe("Hello controller!");
 		});
 		
 		it('a function returnValue deve retornar o mesmo integer informado.', function() {
