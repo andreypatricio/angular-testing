@@ -13,6 +13,7 @@ describe('Eu como desenvolvedor, desejo testar as funcionalidades do controller 
 		vm = $controller('AppController', {
 			$scope : scope,
 		});
+		
 	}));
 	
 	describe('Ao validar as funcionalidades do controller', function(){
@@ -20,6 +21,11 @@ describe('Eu como desenvolvedor, desejo testar as funcionalidades do controller 
 		it('o controller deve estar devidamente instanciado.', function() {
 			expect(scope).toBeDefined();
 			expect(scope.simpleValue).toBe('jasmine')
+		});
+		
+		it('o service dentro do controller deve estar devidamente instanciado.', function() {
+			expect(scope).toBeDefined();
+			expect(vm.service.show()).toBe("Hello Service!")
 		});
 		
 		it('o $scope do meu controller está acessível.', function() {

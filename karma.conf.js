@@ -10,7 +10,7 @@ module.exports = function(config) {
       'bower_components/angular-mocks/angular-mocks.js',
       'src/**/*.js',
       'src/**/*.html',
-      'tests/*'
+      'tests/*.spec.js'
     ],
     
     exclude: [

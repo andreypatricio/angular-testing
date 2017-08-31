@@ -1,14 +1,14 @@
 describe('Eu como desenvolvedor, desejo testar as funcionalidades do serviço da aplicação (app.service.js).', function(){
 
-	var service, v2, v3;
+	var service;
 	
 	beforeEach(module('app'));
-
+	
 	beforeEach(inject(function(_AppService_) {
-		service = _AppService_
+		service = _AppService_;
 	}));
-
-	it('Então o controller deve ser corretamente injetado', function() {
+	
+	it('Então o service deve estar devidamente instanciado', function() {
 		expect(service.show()).toBe("Hello Service!");
 	});
 
