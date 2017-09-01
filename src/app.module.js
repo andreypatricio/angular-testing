@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('app', ['ui-components']);
+angular.module('app', ['ngRoute']);
